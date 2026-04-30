@@ -83,8 +83,8 @@ Do not provide any other image URLs.
         generation_kwargs = dict(
             model_inputs,
             streamer=streamer,
-            max_new_tokens=1024, # Increased to allow space for thinking and response
-            temperature=0.7,
+            max_new_tokens=4096, # Increased to allow space for thinking and response
+            temperature=1,
             do_sample=True,
             top_p=0.9
         )
